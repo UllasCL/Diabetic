@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.artelus.swasthya">
+
+    <uses-permission android:name="android.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".Diabetic"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Swasthya"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login"></activity>
+        <activity
+            android:name=".Registration"
+            android:parentActivityName=".Login" />
+        <activity
+            android:name=".Remainder"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <!-- android:label="@string/title_activity_remainder" -->
+
+        <receiver
+            android:name=".Notification_BreakFast"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".Notification_Lunch"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".Notification_Dinner"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".Notification_Morning_Medicine"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".Notification_Afternoon_Medicine"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".Notification_Night_Medicine"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".AddMedicine"
+            android:parentActivityName=".Remainder" />
+
+        <service android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity
+            android:name=".help"
+            android:label="@string/title_activity_help"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Remove"
+            android:parentActivityName=".Remainder" />
+        <activity
+            android:name=".StepsActivity"
+            android:parentActivityName=".Exercise" />
+        <activity
+            android:name=".Exercise"
+            android:parentActivityName=".Remainder" />
+        <activity android:name=".TimePickerBreakfast" />
+        <activity android:name=".PatientRegistration" />
+        <activity android:name=".TimePickerLunch" />
+        <activity android:name=".TimePickerDinner" />
+        <activity android:name=".PatientRegistration2" />
+        <activity android:name=".addAndRemoveMedicine" />
+        <activity android:name=".TimePickerMorningMedicine" />
+        <activity android:name=".TimePickerAfternoonMedicine" />
+        <activity android:name=".TimePickerNightMedicine" />
+        <activity android:name=".SelectActivity"></activity>
+    </application>
+
+</manifest>

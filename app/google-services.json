@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "443788741423",
+    "firebase_url": "https://diabeticlogin.firebaseio.com",
+    "project_id": "diabeticlogin",
+    "storage_bucket": "diabeticlogin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:443788741423:android:7297235eec848d40",
+        "android_client_info": {
+          "package_name": "com.ullas.diabetic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "443788741423-pj2p6galgidkpv71k8tmk3frl8t3nb8k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ullas.diabetic",
+            "certificate_hash": "af511b20cf3a6d9824aabf12bb1a552506e217bc"
+          }
+        },
+        {
+          "client_id": "443788741423-d8rebsuq92vdvdorerd14melq6qnhaak.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "443788741423-d8rebsuq92vdvdorerd14melq6qnhaak.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmKQSAB1GTHWfL7-1qYVZoJPqbvDI7QkE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "443788741423-d8rebsuq92vdvdorerd14melq6qnhaak.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
